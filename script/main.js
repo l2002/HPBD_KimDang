@@ -13,6 +13,7 @@ window.addEventListener('load', () => {
             document.querySelector('.song').play();
             animationTimeline();
         } else {
+            document.querySelector('.song').play();
             animationTimeline();
         }
     });
