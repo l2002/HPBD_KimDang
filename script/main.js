@@ -13,7 +13,11 @@ window.addEventListener('load', () => {
             document.querySelector('.song').play();
             animationTimeline();
         } else {
+<<<<<<< HEAD
             document.querySelector('.song').play();
+=======
+document.querySelector('.song').play();
+>>>>>>> 811104db6f806219c1e11b2d46bebe5c5d3074d2
             animationTimeline();
         }
     });
