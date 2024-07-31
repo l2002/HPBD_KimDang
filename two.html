@@ -12,7 +12,7 @@
     
 
     <script>(function(w, d) { w.CollectId = "6691e8d01063215eaa127dbf"; var h = d.head || d.getElementsByTagName("head")[0]; var s = d.createElement("script"); s.setAttribute("type", "text/javascript"); s.async=true; s.setAttribute("src", "https://collectcdn.com/launcher.js"); h.appendChild(s); })(window, document);</script>
-    
+    <audio src="./music/until u.mp3"></audio>
     <body>
         <h1 class='txtdeepshadow'>TỤI MÌNH ĐÃ IU NHAU ĐƯỢC 8 THÁNG GÒI ÁAA</h1>
         <h2>THÁNG 12/2023</h2>
@@ -135,16 +135,9 @@ p{
 }
 </style>
 <script>
-window.onload = setInterval(GameLoop, 1000 / 10); //10fps
-
-let myAudio = new Audio();
-
-myAudio.src = './music/until u.mp3';
-
-function Gameloop() {
-    myAudio.play();
-    if (myAudio.paused == true) {
-        myAudio.play();
-    }
-}
+window.addEventListener("DOMContentLoaded", event => {
+  const audio = document.querySelector("audio");
+  audio.volume = 0.2;
+  audio.play();
+});
 </script>
