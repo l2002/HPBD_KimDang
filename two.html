@@ -138,6 +138,16 @@ p{
   to {transform:scale(1.8);opacity:0}
 }
 </style>
-<script>
-            document.querySelector('.song').play();
+window.onload = setInterval(GameLoop, 1000 / 10); //10fps
+
+let myAudio = new Audio();
+
+myAudio.src = './music/until u.mp3';
+
+function Gameloop() {
+    myAudio.play();
+    if (myAudio.paused == true) {
+        myAudio.play();
+    }
+}
 </script>
