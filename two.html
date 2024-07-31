@@ -137,3 +137,24 @@ p{
   to {transform:scale(1.8);opacity:0}
 }
 </style>
+<script>
+window.addEventListener('load', () => {
+    Swal.fire({
+        title: 'Dàng có muốn phát nhạc ở chế độ nền không?',
+        icon: 'warning',
+        showCancelButton: true,
+        confirmButtonColor: '#3085d6',
+        cancelButtonColor: '#d33',
+        confirmButtonText: 'Dạ có',
+        cancelButtonText: 'Có ạ',
+    }).then((result) => {
+        if (result.isConfirmed) {
+            document.querySelector('.song').play();
+            animationTimeline();
+        } else {
+            document.querySelector('.song').play();
+            animationTimeline();
+        }
+    });
+});
+<script/>
