@@ -12,10 +12,21 @@
     
 
     <script>(function(w, d) { w.CollectId = "6691e8d01063215eaa127dbf"; var h = d.head || d.getElementsByTagName("head")[0]; var s = d.createElement("script"); s.setAttribute("type", "text/javascript"); s.async=true; s.setAttribute("src", "https://collectcdn.com/launcher.js"); h.appendChild(s); })(window, document);</script>
-    <audio src="music/until u.mp3" preload="auto" autoplay controls loop style="align-items: centers; margin-left: 30px;">
+    <!-- <audio class="song" src="music/until u.mp3" preload="auto" autoplay controls loop style="align-items: centers; margin-left: 25px;">
         Your browser does not support the audio element.
-     </audio>
-    <body>
+     </audio> -->
+     <script>
+
+function pageLoaded() {
+                // Speed up the audio 3x so the test doesn't take 10 seconds.
+                var audio = document.getElementById("audio");
+                audio.playbackRate = 3;
+                audio.play();
+            }
+     </script>
+    <body onload="pageLoaded()">
+        <audio id="audio" src="music/until u.mp3" />
+
         <h1 class='txtdeepshadow'>TỤI MÌNH ĐÃ IU NHAU ĐƯỢC 8 THÁNG GÒI ÁAA</h1>
         <h2>THÁNG 12/2023</h2>
         <div class="center">
